@@ -168,7 +168,7 @@ function App() {
 
       <footer className="site-footer page-width">
         <a className="wordmark" href="#home">SV<span>.</span></a>
-        <p>Made with intention. © {new Date().getFullYear()} [Your name]</p>
+        <p>Made with intention. © {new Date().getFullYear()} S Vineetha</p>
         <div className="footer-links"><a href="https://github.com/SVineetha" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#home">Back to top ↑</a></div>
       </footer>
     </>
