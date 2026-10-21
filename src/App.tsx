@@ -1,57 +1,87 @@
-const projects = [
+const capabilities = [
   {
     number: '01',
-    type: 'CONTENT SYSTEMS',
-    title: 'A clearer path through complex content',
+    title: 'Web data extraction',
     description:
-      'Replace this with a real project: explain the audience, the content challenge, your approach, and the outcome. Keep confidential details out.',
-    tags: ['Content design', 'Information architecture', 'Guidelines'],
-    mark: 'Aa',
-    tone: 'sage',
+      'Editorial crawling, resilient extraction workflows, and structured data from complex web sources.',
   },
   {
     number: '02',
-    type: 'DEVELOPER EXPERIENCE',
-    title: 'Documentation people can actually use',
+    title: 'Crawler operations',
     description:
-      'Add a documentation or developer experience project. Describe what you owned, who you collaborated with, and how you measured success.',
-    tags: ['Documentation', 'Taxonomy', 'Governance'],
-    mark: '{ }',
-    tone: 'peach',
+      'Configuration maintenance, source reliability, and practical troubleshooting when access gets complicated.',
   },
   {
     number: '03',
-    type: 'CONTENT ENGINEERING',
-    title: 'From scattered pages to a connected system',
+    title: 'Data quality',
     description:
-      'Feature a content engineering example here—such as structured content, workflow improvements, or a useful internal tool.',
-    tags: ['Structured content', 'Automation', 'Accessibility'],
-    mark: '↗',
-    tone: 'blue',
+      'Careful attention to extraction accuracy, content integrity, and the details that make downstream data useful.',
+  },
+  {
+    number: '04',
+    title: 'What’s next',
+    description:
+      'Exploring data engineering and AI-assisted automation to build smarter, more scalable data solutions.',
   },
 ]
 
-const skills = [
-  'Content strategy',
-  'Technical writing',
-  'Information architecture',
-  'Content design',
-  'Documentation systems',
-  'Content modeling',
-  'Editorial operations',
-  'Cross-functional collaboration',
+const focusAreas = [
+  'Editorial content crawling',
+  'Web data extraction',
+  'Crawler configuration',
+  'Source reliability',
+  'Bot-detection troubleshooting',
+  'Data quality & accuracy',
+  'Content pipelines',
+  'AI-assisted automation',
 ]
+
+function NetworkArtwork() {
+  return (
+    <div className="network-art" role="img" aria-label="An animated network of connected data points">
+      <div className="network-orbit orbit-outer" />
+      <div className="network-orbit orbit-inner" />
+      <svg className="network-lines" viewBox="0 0 520 520" fill="none" aria-hidden="true">
+        <path className="data-path path-one" d="M63 309 145 215l93 44 86-127 132 53" />
+        <path className="data-path path-two" d="m100 107 92 115 46 37 106 106 83-100" />
+        <path className="data-path path-three" d="m145 215 47 7 132-90 20 233 112-187" />
+        <path className="data-path path-four" d="m63 309 145 104 116-48 83-100 49-80" />
+        <circle className="node node-a" cx="63" cy="309" r="5" />
+        <circle className="node node-b" cx="100" cy="107" r="4" />
+        <circle className="node node-c" cx="145" cy="215" r="6" />
+        <circle className="node node-d" cx="192" cy="222" r="4" />
+        <circle className="node node-e" cx="208" cy="413" r="4" />
+        <circle className="node node-f" cx="238" cy="259" r="7" />
+        <circle className="node node-g" cx="324" cy="132" r="5" />
+        <circle className="node node-h" cx="324" cy="365" r="6" />
+        <circle className="node node-i" cx="407" cy="265" r="5" />
+        <circle className="node node-j" cx="456" cy="85" r="4" />
+        <circle className="node node-k" cx="456" cy="185" r="5" />
+      </svg>
+      <div className="network-core">
+        <span className="core-kicker">FROM WEB TO</span>
+        <span className="core-title">insight<span>.</span></span>
+        <span className="core-rule" />
+        <span className="core-caption">CONTENT · SYSTEMS · DATA</span>
+      </div>
+      <span className="network-label label-source">01 / SOURCE</span>
+      <span className="network-label label-signal">02 / SIGNAL</span>
+      <span className="network-label label-structure">03 / STRUCTURE</span>
+      <span className="network-coordinate">11° 00' 00.0&quot; N&nbsp; / &nbsp;76° 57' 00.0&quot; E</span>
+    </div>
+  )
+}
 
 function App() {
   return (
     <>
       <header className="site-header">
-        <a className="wordmark" href="#home" aria-label="Portfolio home">
-          SV<span>.</span>
+        <a className="wordmark" href="#home" aria-label="Vineetha home">
+          V<span>.</span>
         </a>
         <nav aria-label="Main navigation">
           <a href="#about">About</a>
-          <a href="#work">Selected work</a>
+          <a href="#work">What I do</a>
           <a href="#contact">Contact</a>
         </nav>
         <a className="header-link" href="https://github.com/SVineetha" target="_blank" rel="noreferrer">
@@ -62,114 +92,161 @@ function App() {
       <main id="home">
         <section className="hero page-width">
           <div className="hero-copy">
-            <p className="eyebrow"><span className="status-dot" /> SENIOR CONTENT ENGINEER</p>
-            <h1>Good content<br />is <em>built</em> to work.</h1>
+            <p className="eyebrow"><span className="status-dot" /> OPEN TO GOOD CONVERSATIONS</p>
+            <p className="hero-role">SENIOR CONTENT ENGINEER <span>·</span> WEB DATA &amp; AUTOMATION</p>
+            <h1>Making the<br />Complex Web,<br /><em>Work.</em></h1>
             <p className="hero-intro">
-              I bring content, systems, and technology together to make complex
-              information clearer—and easier to use.
+              I solve complex web data extraction challenges, build resilient content workflows,
+              and explore smarter ways to turn web data into meaningful intelligence.
             </p>
             <div className="hero-actions">
-              <a className="button button-dark" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+              <a className="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
               <a className="text-link" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
             </div>
           </div>
-          <div className="hero-art" aria-label="Abstract editorial illustration" role="img">
-            <div className="art-orbit orbit-one" />
-            <div className="art-orbit orbit-two" />
-            <div className="art-core"><span>content</span><span>×</span><span>systems</span></div>
-            <div className="art-label label-top">MAKE IT CLEAR</div>
-            <div className="art-label label-bottom">MAKE IT SCALE</div>
-            <span className="art-spark spark-one">✳</span>
-            <span className="art-spark spark-two">✳</span>
+          <NetworkArtwork />
+          <div className="hero-note">
+            <span>CONTENT ENGINEERING / 01—04</span>
+            <span>MAKING THE UNSTRUCTURED USEFUL.</span>
           </div>
-          <div className="hero-note"><span>01 / 03</span><span>WORDS WITH PURPOSE. SYSTEMS WITH SOUL.</span></div>
+          <a className="scroll-cue" href="#about" aria-label="Scroll to about section">SCROLL TO EXPLORE <span>↓</span></a>
         </section>
 
-        <section className="intro-band">
+        <section className="intro-band" aria-label="Introduction">
           <div className="page-width intro-inner">
-            <p className="eyebrow">THE SHORT VERSION</p>
-            <p className="intro-statement">I turn <span>complexity</span> into content experiences that feel simple, useful, and human.</p>
-            <a href="#about" className="round-link" aria-label="Read about me">↓</a>
+            <p className="eyebrow">THE THREAD THROUGH IT ALL</p>
+            <p className="intro-statement">
+              The web is messy. I build the <span>systems</span> that make its content work harder.
+            </p>
+            <span className="intro-index" aria-hidden="true">V / 01</span>
           </div>
         </section>
 
         <section className="about-section page-width" id="about">
           <div className="section-heading">
-            <p className="eyebrow">A LITTLE ABOUT ME</p>
-            <span className="section-index">01 — ABOUT</span>
+            <p className="eyebrow">01 / A LITTLE ABOUT ME</p>
+            <span className="section-index">THE PERSON BEHIND THE PIPELINE</span>
           </div>
           <div className="about-grid">
-            <h2>Structure matters.<br /><em>So does the story.</em></h2>
+            <h2>Curiosity for the<br />web. <em>Care for the<br />details.</em></h2>
             <div className="about-copy">
               <p>
-                Hi, I’m <strong>[Your name]</strong>—a Senior Content Engineer who cares about
-                the details behind a great content experience. I work across strategy,
-                language, and technology to help teams create information that is coherent,
-                accessible, and ready to grow.
+                I’m <strong>Vineetha</strong>, a Senior Content Engineer working where web data,
+                editorial content, and automation meet. I build and maintain content crawling
+                workflows that turn complicated web pages into dependable, usable data.
               </p>
               <p>
-                This is your space to share what you believe about the craft, the kinds of
-                challenges you love, and the perspective you bring to a team. Make it sound
-                like you; a specific, honest story is more memorable than a list of buzzwords.
+                From tricky bot-detection and access issues to crawler configurations and content
+                pipelines, I enjoy untangling the hard cases. I care about source reliability and
+                extraction accuracy—and take ownership from the first investigation through a
+                reliable resolution.
               </p>
-              <a className="text-link underlined" href="https://github.com/SVineetha" target="_blank" rel="noreferrer">More about my work on GitHub <span aria-hidden="true">↗</span></a>
+              <p>
+                I work closely across teams, share context, and look for fixes that hold up beyond
+                one source or one day. Lately, I’ve been growing into data engineering and
+                exploring how AI-assisted automation can make data solutions more thoughtful and
+                scalable.
+              </p>
+              <a className="text-link underlined" href="https://github.com/SVineetha" target="_blank" rel="noreferrer">
+                A little more on GitHub <span aria-hidden="true">↗</span>
+              </a>
             </div>
           </div>
           <div className="principles">
-            <article><span>01</span><h3>Clarity first</h3><p>Make the useful thing easy to find, understand, and act on.</p></article>
-            <article><span>02</span><h3>Systems thinking</h3><p>Design content that works beyond a single page or moment.</p></article>
-            <article><span>03</span><h3>People always</h3><p>Build with empathy for readers and the teams serving them.</p></article>
+            <article>
+              <span>01</span>
+              <h3>Follow the signal</h3>
+              <p>Understand the source before trying to fix the extraction.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Own the hard parts</h3>
+              <p>Stay curious, work the problem, and make the resolution stick.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Make data dependable</h3>
+              <p>Good pipelines begin with reliable sources and careful details.</p>
+            </article>
           </div>
         </section>
 
         <section className="work-section" id="work">
           <div className="page-width">
             <div className="section-heading">
-              <div><p className="eyebrow">THOUGHTFUL WORK, REAL IMPACT</p><h2>Selected work<span className="accent">.</span></h2></div>
-              <span className="section-index">02 — PROJECTS</span>
+              <div>
+                <p className="eyebrow">02 / WHERE I MAKE A DIFFERENCE</p>
+                <h2>Complex in.<br /><em>Clear out.</em></h2>
+              </div>
+              <p className="work-intro">
+                A closer look at the kinds of challenges I take on—and the engineering thinking
+                I bring to each one.
+              </p>
             </div>
-            <div className="project-list">
-              {projects.map((project) => (
-                <article className="project-card" key={project.number}>
-                  <div className={`project-art ${project.tone}`} aria-hidden="true"><span>{project.mark}</span><i /><i /><i /></div>
-                  <div className="project-content">
-                    <div className="project-meta"><span>{project.number} / {project.type}</span><span className="project-arrow">↗</span></div>
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-                    <ul className="tag-list">{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
-                  </div>
+            <div className="capability-list">
+              {capabilities.map((capability) => (
+                <article className="capability-card" key={capability.number}>
+                  <span className="capability-number">{capability.number}</span>
+                  <h3>{capability.title}</h3>
+                  <p>{capability.description}</p>
+                  <span className="capability-mark" aria-hidden="true">↗</span>
                 </article>
               ))}
             </div>
-            <p className="placeholder-note">Project descriptions above are starter prompts—replace them with your own work and outcomes.</p>
+            <p className="work-note">
+              The work is real; the examples are intentionally high-level to respect the details
+              of production systems and team confidentiality.
+            </p>
           </div>
         </section>
 
         <section className="skills-section page-width">
           <div className="section-heading">
-            <div><p className="eyebrow">WHAT I BRING</p><h2>Tools for the<br /><em>whole picture.</em></h2></div>
-            <span className="section-index">03 — CAPABILITIES</span>
+            <div>
+              <p className="eyebrow">03 / THE TOOLKIT</p>
+              <h2>Grounded in today.<br /><em>Growing toward tomorrow.</em></h2>
+            </div>
+            <span className="section-index">PRACTICE / CURIOSITY</span>
           </div>
           <div className="skills-content">
-            <p>My work moves between the big picture and the details: shaping the experience, making the system sustainable, and helping teams deliver with confidence.</p>
-            <ul className="skills-list">{skills.map((skill) => <li key={skill}><span>{skill}</span><span aria-hidden="true">↗</span></li>)}</ul>
+            <p>
+              Strong systems start with good fundamentals. I bring a practical approach to the
+              work I do today—and an engineer’s curiosity about what could make it better next.
+            </p>
+            <ul className="skills-list">
+              {focusAreas.map((area, index) => (
+                <li key={area}>
+                  <span className="skill-index">0{index + 1}</span>
+                  <span>{area}</span>
+                  <span className="skill-arrow" aria-hidden="true">↗</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
         <section className="contact-section" id="contact">
           <div className="page-width contact-inner">
-            <p className="eyebrow">HAVE A GOOD QUESTION?</p>
-            <h2>Let’s make<br /><em>something clearer.</em></h2>
-            <p className="contact-copy">Have a project, a tricky content challenge, or just want to say hello? I’d love to hear from you.</p>
-            <a className="button button-light" href="mailto:your.email@example.com">Say hello <span aria-hidden="true">↗</span></a>
+            <p className="eyebrow">04 / HAVE A CHALLENGE IN MIND?</p>
+            <h2>Let’s make<br /><em>the web work.</em></h2>
+            <p className="contact-copy">
+              Interested in content engineering, web data, or building something smarter together?
+              I’d love to hear what you’re working on.
+            </p>
+            <a className="button button-light" href="https://github.com/SVineetha" target="_blank" rel="noreferrer">
+              Let’s connect on GitHub <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </section>
       </main>
 
       <footer className="site-footer page-width">
-        <a className="wordmark" href="#home">SV<span>.</span></a>
-        <p>Made with intention. © {new Date().getFullYear()} S Vineetha</p>
-        <div className="footer-links"><a href="https://github.com/SVineetha" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#home">Back to top ↑</a></div>
+        <a className="wordmark" href="#home" aria-label="Back to home">V<span>.</span></a>
+        <p>Thoughtfully engineered. © {new Date().getFullYear()} Vineetha</p>
+        <div className="footer-links">
+          <a href="https://github.com/SVineetha" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="#home">Back to top ↑</a>
+        </div>
       </footer>
     </>
   )
